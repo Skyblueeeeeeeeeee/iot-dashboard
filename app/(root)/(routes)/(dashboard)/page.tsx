@@ -13,7 +13,7 @@ const SetupPage = () => {
     }
   }, []);
 
-  return <div>This is Dashboard</div>;
+  return <>This is Dashboard</>;
 };
 
 export default SetupPage;
