@@ -8,7 +8,7 @@ import { Providers as ReduxProviders } from "@/redux/provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IoT Dashboad",
+  title: "IoT Dashboard",
   description: "IoT Monitor using Thingsboard",
 };
 
