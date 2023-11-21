@@ -13,4 +13,4 @@ Go to `localhost:3000` in your client to access website.
 
 
 ## Copyright
-© 2023, (@ttqteo)[https://github.com/ttqteo]
+© 2023, [@ttqteo](https://github.com/ttqteo)
