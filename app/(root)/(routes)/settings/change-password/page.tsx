@@ -2,19 +2,15 @@
 
 import Heading from "@/components/heading";
 import { Separator } from "@/components/ui/separator";
-import ChangePasswordForm from "./components/change-password-form";
-import ProfileForm from "./components/profile-form";
+import ChangePasswordForm from "../components/change-password-form";
 
 const SettingsPage = () => {
   return (
     <>
       <div className="space-y-6">
-        <Heading
-          title="Profile"
-          description="This is how others will see you on the site"
-        />
+        <Heading title="Change Password" description="" />
         <Separator />
-        <ProfileForm />
+        <ChangePasswordForm />
       </div>
     </>
   );

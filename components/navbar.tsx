@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="ml-auto flex items-center space-x-4 gap-2">
           <div className="flex flex-col text-right">
             <span>
-              {authUser?.data ? `Hi, ${authUser.data.firstName}` : `Unknown`}
+              {authUser?.data ? `Hi, ${authUser.data.firstName}` : ``}
             </span>
             <span className="text-xs">
               {authUser?.data ? `${authUser.data.authority}` : ``}
