@@ -1,3 +1,3 @@
 import { ThingsboardApiClient } from "thingsboard-api-client";
 
-export const ThingsbsoadClient = new ThingsboardApiClient();
+export const thingsboard = new ThingsboardApiClient();

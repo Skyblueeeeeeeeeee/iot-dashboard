@@ -1,9 +1,8 @@
-import { cn } from "@/lib/utils";
 import { ToasterProvider } from "@/providers/toast-provider";
+import { Providers as ReduxProviders } from "@/redux/provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Providers as ReduxProviders } from "@/redux/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,4 +1,4 @@
-import { ThingsbsoadClient } from "@/lib/tbClient";
+import { thingsboard } from "@/lib/tbClient";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
 
@@ -21,9 +21,7 @@ const initialState: AuthState = {
 export const getAuthUser = createAsyncThunk(
   "get/auth/user",
   async (token: string = "") => {
-    const resp = await ThingsbsoadClient.AuthController().getUser(
-      "Bearer " + token
-    );
+    const resp = await thingsboard.auth().getUser(token);
     return resp;
   }
 );

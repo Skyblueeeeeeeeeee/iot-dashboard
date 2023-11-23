@@ -17,10 +17,10 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { ThingsbsoadClient } from "@/lib/tbClient";
+import { thingsboard } from "@/lib/tbClient";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader } from "lucide-react";
-import { redirect, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
@@ -39,13 +39,13 @@ const LoginForm = () => {
 
   const form = useForm<LoginFormValues>({
     resolver: zodResolver(LoginFormSchema),
-    mode: "onChange",
+    mode: "onBlur",
   });
 
   async function onSubmit(data: LoginFormValues) {
     try {
       setLoading(true);
-      const resp = (await ThingsbsoadClient.LoginEndpoint().login(data)) as any;
+      const resp = (await thingsboard.loginEndpoint().login(data)) as any;
       if (resp?.token) {
         if (typeof window !== "undefined") {
           localStorage.setItem("token", resp.token);
