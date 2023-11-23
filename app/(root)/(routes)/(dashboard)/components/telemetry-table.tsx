@@ -1,7 +1,5 @@
-import React from "react";
-
 const TelemetryTable = () => {
-  return <div>TelemetryTable</div>;
+  return <div>Telemetry Table</div>;
 };
 
 export default TelemetryTable;
