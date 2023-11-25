@@ -64,7 +64,7 @@ const LoginForm = () => {
   return (
     <Card className="w-[24em]">
       <CardHeader className="space-y-1">
-        <CardTitle className="text-2xl">Sign In</CardTitle>
+        <CardTitle className="text-2xl">Login</CardTitle>
         <CardDescription>Access to IoT Dashboard</CardDescription>
       </CardHeader>
       <CardContent>
@@ -106,7 +106,7 @@ const LoginForm = () => {
               disabled={loading}
             >
               {loading && <Loader className="mr-2 h-4 w-4 animate-spin" />}
-              Sign In
+              Login
             </Button>
           </form>
         </Form>

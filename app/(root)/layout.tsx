@@ -4,7 +4,7 @@ const SetupLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Navbar />
-      <div className="container mx-4 px-2 my-6">{children}</div>
+      <div className="container mx-auto px-8 my-6 w-full">{children}</div>
     </>
   );
 };

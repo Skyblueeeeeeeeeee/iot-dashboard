@@ -2,7 +2,6 @@
 
 import Heading from "@/components/heading";
 import { Separator } from "@/components/ui/separator";
-import ChangePasswordForm from "./components/change-password-form";
 import ProfileForm from "./components/profile-form";
 
 const SettingsPage = () => {
