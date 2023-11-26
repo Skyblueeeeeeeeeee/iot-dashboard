@@ -127,6 +127,9 @@ export function DataTable<TData, TValue>({
             Page {table.getState().pagination.pageIndex + 1} of{" "}
             {table.getPageCount()}
           </div>
+          <div className="flex w-[150px] items-center justify-center text-sm font-medium">
+            Total {data.length} element(s)
+          </div>
         </div>
         <div className="flex items-center justify-end space-x-2 py-4">
           <Button

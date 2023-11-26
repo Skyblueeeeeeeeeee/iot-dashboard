@@ -1,6 +1,10 @@
-# IoT Dashboard Next.js
+# IoT Dashboard Template
 
 This project helps you to monitor IoT device from Thingsboard platform.
+
+## Techstack
+* Frontend: `Next.js`
+* Platform: `Thingsboard`
 
 ## Development
 
